@@ -1,65 +1,71 @@
-WAG Trust Panel
+# WAG Trust Panel
 
 A small desktop utility that gives clear, human-readable visibility into what a Windows laptop is actually doing.
 
-WAG Trust Panel reduces uncertainty by replacing guesswork with observable system facts. It shows running processes, active network connections, and performs a simple preflight health check so a user can quickly see whether their machine is behaving normally.
+WAG Trust Panel reduces uncertainty by replacing guesswork with observable system facts. It shows running processes, active network connections, and performs a simple **preflight health check** so a user can quickly see whether their machine is behaving normally.
 
 This tool is intentionally simple, transparent, and non-invasive.
 
-Purpose
+---
+
+## Purpose
 
 Many people feel uneasy about their computers because system activity is invisible and hard to interpret. This tool provides a plain dashboard that answers:
 
-What programs are running?
+- What programs are running?
+- What network connections are active?
+- Does the system look healthy right now?
 
-What network connections are active?
+It does **not** monitor, spy, or collect data. It only displays information already available on the local machine.
 
-Does the system look healthy right now?
+---
 
-It does not monitor, spy, or collect data. It only displays information already available on the local machine.
+## Features
 
-Features
-System Activity
+### System Activity
+- Lists active processes
+- Shows outbound network connections
+- Displays real, current system state
 
-Lists active processes
+### Preflight Check
+- Quick system health check
+- Flags unusual CPU or connection patterns
+- Returns a simple **"System looks normal"** when everything is fine
 
-Shows outbound network connections
+### Simple UI
+- Built with Tkinter
+- One window, three buttons, immediate feedback
+- Designed for non-technical users
 
-Displays real, current system state
+---
 
-Preflight Check
+## Requirements
 
-Quick system health check
+- Windows laptop
+- Python 3.10+
+- Internet connection (only for installing packages)
 
-Flags unusual CPU or connection patterns
+You’re one tiny Markdown rule away from perfect.
 
-Returns a simple “System looks normal” when everything is fine
+Code blocks.
 
-Simple UI
+Anything that is a command, file tree, or package list must be inside triple backticks. Without them, GitHub renders it as plain text and it looks “off”.
 
-Built with Tkinter
+Replace just these sections.
 
-One window, three buttons, immediate feedback
+Replace Python packages used with:
+### Python packages used
 
-Designed for non-technical users
 
-Requirements
-
-Windows laptop
-
-Python 3.10+
-
-Internet connection (only for installing packages)
-
-Python packages used:
 
 psutil
 requests
 google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
+---
 
-Installation (on the target laptop)
+## Installation (on the target laptop)
 
 Clone the repository:
 
@@ -72,11 +78,14 @@ Install dependencies:
 pip install -r requirements.txt
 
 
-Run the app:
+Install dependencies:
 
-python main.py
+pip install -r requirements.txt
 
-File Structure
+---
+
+## File Structure
+
 wag_trust_panel/
 ├─ main.py
 ├─ ui.py
@@ -84,33 +93,25 @@ wag_trust_panel/
 ├─ preflight_check.py
 └─ requirements.txt
 
-Design Philosophy
+
+---
+
+## Design Philosophy
 
 This project applies simple observability principles to personal computing:
 
-Show real system state
+- Show real system state
+- Remove mystery
+- Provide reassurance through facts
+- Keep the tool transparent and understandable
 
-Remove mystery
+---
 
-Provide reassurance through facts
+## Future Additions
 
-Keep the tool transparent and understandable
-
-Future Additions
-
-Gmail inbox noise filtering
-
-Startup program viewer
-
-Expanded system checks
-
-Logging for historical comparison
-
-Then commit:
-
-git add README.md
-git commit -m "format README properly"
-git push
+- Gmail inbox noise filtering
+- Startup program viewer
+- Expanded system checks
+- Logging for historical comparison
 
 
-When you refresh GitHub, it will look clean and professional instead of dense.
