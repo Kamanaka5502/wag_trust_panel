@@ -10,9 +10,12 @@ This tool is intentionally simple, transparent, and non-invasive.
 
 ## Installation (on the target laptop)
 
-git clone https://github.com/Kamanaka5502/wag_trust_panel
+git clone https://github.com/Kamanaka5502/wag_trust_pane
+
 cd wag_trust_panel
+
 pip install -r requirements.txt
+
 python main.py
 
 ---
@@ -29,7 +32,7 @@ system_monitor.py
 preflight_check.py
 requirements.txt
 
-Design Philosophy
+## Design Philosophy
 
 This project applies simple observability principles to personal computing:
 
@@ -41,7 +44,7 @@ Provide reassurance through facts
 
 Keep the tool transparent and understandable
 
-Future Additions
+## Future Additions
 
 Gmail inbox noise filtering
 
