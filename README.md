@@ -19,18 +19,15 @@ pip install -r requirements.txt
 python main.py
 
 ---
-
 ## File Structure
 
-
-File Structure
-
 wag_trust_panel/
-main.py
-ui.py
-system_monitor.py
-preflight_check.py
-requirements.txt
+- main.py
+- ui.py
+- system_monitor.py
+- preflight_check.py
+- requirements.txt
+
 
 ## Design Philosophy
 
