@@ -2,13 +2,13 @@ WAG Trust Panel
 
 A small desktop utility that gives clear, human-readable visibility into what a Windows laptop is actually doing.
 
-WAG Trust Panel is designed to reduce uncertainty by replacing guesswork with observable system facts. It shows running processes, active network connections, and performs a simple “preflight” health check so a user can quickly see whether their machine is behaving normally.
+WAG Trust Panel reduces uncertainty by replacing guesswork with observable system facts. It shows running processes, active network connections, and performs a simple preflight health check so a user can quickly see whether their machine is behaving normally.
 
 This tool is intentionally simple, transparent, and non-invasive.
 
 Purpose
 
-Many people feel uneasy about their computers because system activity is invisible and hard to interpret. This tool provides a plain-language dashboard that answers:
+Many people feel uneasy about their computers because system activity is invisible and hard to interpret. This tool provides a plain dashboard that answers:
 
 What programs are running?
 
@@ -58,3 +58,59 @@ requests
 google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
+
+Installation (on the target laptop)
+
+Clone the repository:
+
+git clone https://github.com/Kamanaka5502/wag_trust_panel
+cd wag_trust_panel
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+Run the app:
+
+python main.py
+
+File Structure
+wag_trust_panel/
+├─ main.py
+├─ ui.py
+├─ system_monitor.py
+├─ preflight_check.py
+└─ requirements.txt
+
+Design Philosophy
+
+This project applies simple observability principles to personal computing:
+
+Show real system state
+
+Remove mystery
+
+Provide reassurance through facts
+
+Keep the tool transparent and understandable
+
+Future Additions
+
+Gmail inbox noise filtering
+
+Startup program viewer
+
+Expanded system checks
+
+Logging for historical comparison
+
+Then commit:
+
+git add README.md
+git commit -m "format README properly"
+git push
+
+
+When you refresh GitHub, it will look clean and professional instead of dense.
